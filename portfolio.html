@@ -11,19 +11,21 @@
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#" class="logo"><span>Web</span>Studio</a>
-            <ul>
-                <li class="navigation"><a href="./index.html">Студия</a></li>
-                <li class="navigation portfolio"><a href="./portfolio.html">Портфолио</a></li>
-                <li class="navigation"><a href="#">Контакты</a></li>
+    <header class="header">
+        <div class="container">
+            <nav class="navig">
+                <a href="#" class="logo"><span>Web</span>Studio</a>
+                <ul class="navig-menu list-no-style">
+                    <li class="navigation"><a href="./index.html">Студия</a></li>
+                    <li class="navigation portfolio"><a href="./portfolio.html">Портфолио</a></li>
+                    <li class="navigation"><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="navig-address list-no-style ">
+                <li class="address-header"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="address-header"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-        <ul>
-            <li class="address-header"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="address-header"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        </div>   
     </header>
 
     <main>
@@ -31,7 +33,7 @@
         <!-- WORKS -->
         <section class="works">
             <h2 hidden>our works</h2>
-            <ul>
+            <ul class="list-no-style">
                 <li><button type="button" class="filter-button">Все</button></li>
                 <li><button type="button" class="filter-button">Веб-сайты</button></li>
                 <li><button type="button" class="filter-button">Приложения</button></li>
@@ -39,7 +41,7 @@
                 <li><button type="button" class="filter-button">Маркетинг</button></li>
             </ul>
 
-            <ul>
+            <ul class="list-no-style">
                 <li>
                     <img src="./images/portfolio/p1-technokryak.jpg" alt="technokryak" width="370" height="294">
                     <h3>Технокряк</h3>
@@ -94,7 +96,7 @@
         <a href="#" class="logo logo-footer"><span>Web</span>Studio</a>
         <address>
             <p class="address-footer">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul>
+            <ul class="list-no-style">
                 <li class="address-footer"><a href="mailto:info@example.com">info@example.com</a></li>
                 <li class="address-footer"><a href="tel:+380991111111">+38 099 111 11 11</a></li>
             </ul>

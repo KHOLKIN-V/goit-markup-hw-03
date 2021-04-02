@@ -68,8 +68,6 @@ body {
 
 /* Logo */
 .logo {
-  margin-right: 93px;
-
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -88,6 +86,10 @@ body {
 }
 
 /* navigation */
+.navig .logo {
+  margin-right: 93px;
+}
+
 .navigation a {
   font-size: 14px;
   line-height: 16px;
@@ -120,7 +122,23 @@ body {
 
 /* FOOTER */
 .footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--title-bcg-color);
+}
+.footer-container a {
+  margin-bottom: 20px;
+}
+.footer-container p {
+  margin-bottom: 9px;
+}
+.footer-container li:not(:last-child) {
+  margin-bottom: 9px;
 }
 .address-footer {
   font-style: normal;
@@ -221,11 +239,58 @@ body {
   color: var(--primary-text-color);
 }
 
+/* ABOUT */
+.about .h2-web {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.about .container .list-no-style {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+.about .container .list-no-style li {
+  flex-basis: calc((100% - 60px) / 3);
+}
+.about .container .list-no-style li:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* TEAM */
 .team-container {
+  display: flex;
+  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--primary-bcg-color);
+  flex-direction: column;
+}
+.team-container .h2-web {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-color: var(--primary-bcg-color);
+  justify-content: center;
+}
+.team-container .names {
+  display: flex;
+  justify-content: center;
+}
+.team-container .names li {
+  background-color: var(--primary-white-color);
+}
+.team-container .names li:not(:last-child) {
+  margin-right: 30px;
 }
 .names h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -233,6 +298,10 @@ body {
   color: var(--title-text-color);
 }
 .names p {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
   font-weight: 400;
   line-height: 1.19;
   letter-spacing: 0.03em;
