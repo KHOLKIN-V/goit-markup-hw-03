@@ -15,6 +15,8 @@
   --title-bcg-color: #2f303a;
   --primary-bcg-color: #f5f4fa;
   --logo-primary-header: #000000;
+  --header-border-color: #ececec;
+  --projects-border-color: #eeeeee;
 }
 
 body {
@@ -39,12 +41,11 @@ body {
   margin: 0 auto;
 }
 /* HEADER */
-.header {
-  padding: 24px 0;
-}
 .header .container {
   display: flex;
   align-items: center;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--header-border-color);
 }
 .header .navig {
   display: flex;
@@ -362,16 +363,22 @@ body {
 .projects .container img {
   display: block;
   margin: 0;
+  padding: 0 auto;
 }
 .projects .container h3 {
   display: block;
-  height: 36px;
-  margin: 20px 24px 4px 24px;
+  padding: 20px 24px 4px 24px;
+  margin: 0;
+  border-right: 1px solid var(--projects-border-color);
+  border-left: 1px solid var(--projects-border-color);
 }
 .projects .container p {
   display: block;
-  height: 30px;
-  margin: 0 24px 20px 24px;
+  padding: 0 24px 20px 24px;
+  margin: 0;
+  border-right: 1px solid var(--projects-border-color);
+  border-left: 1px solid var(--projects-border-color);
+  border-bottom: 1px solid var(--projects-border-color);
 }
 .works h3 {
   font-weight: 700;
