@@ -39,10 +39,10 @@
         <!-- /HERO -->
 
         <!-- ADVANTAGES -->
-        <section>
-            <h2 hidden>advantages</h2>
+        <section class="advantages">
             <div class="container">
-                <ul class="advantages list-no-style">
+                <h2 class="visually-hidden">advantages</h2>
+                <ul class="list-no-style">
                     <li>
                         <h3>Внимание к деталям</h3>
                         <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -67,8 +67,8 @@
 
         <!-- ABOUT -->
         <section class="about">
-            <h2 class="h2-web">Чем мы занимаемся</h2>
             <div class="container">
+                <h2 class="h2-web">Чем мы занимаемся</h2>
                 <ul class="list-no-style ">
                     <li><img src="./images/about1.jpg" alt="picture about us" width="370" height="294"></li>
                     <li><img src="./images/about2.jpg" alt="picture about us" width="370" height="294"></li>
@@ -80,43 +80,56 @@
         <!-- /ABOUT -->
 
         <!-- TEAM -->
-        <section class="team-container container">
-            <h2 class="h2-web">Наша команда</h2>
-            <ul class="names list-no-style ">
-                <li>
-                    <img src="./images/team1igor.jpg" alt="Игорь Демьяненко Product Designer" width="270" height="260">
-                    <h3>Игорь Демьяненко</h3>
-                    <p>Product Designer</p>
-                </li>
-                <li>
-                    <img src="./images/team2olga.jpg" alt="Ольга Репина Frontend Developer" width="270" height="260">
-                    <h3>Ольга Репина</h3>
-                    <p>Frontend Developer</p>
-                </li>
-                <li>
-                    <img src="./images/team3nikolai.jpg" alt="Николай Тарасов Marketing" width="270" height="260">
-                    <h3>Николай Тарасов</h3>
-                    <p>Marketing</p>
-                </li>
-                <li>
-                    <img src="./images/team4michail.jpg" alt="Михаил Ермаков UI Designer" width="270" height="260">
-                    <h3>Михаил Ермаков</h3>
-                    <p>UI Designer</p>
-                </li>
-            </ul>
+        <section class="team-container">
+            <div class="container">
+                <h2 class="h2-web">Наша команда</h2>
+                <ul class="names list-no-style ">
+                    <li>
+                        <img src="./images/team1igor.jpg" alt="Игорь Демьяненко Product Designer" width="270" height="260">
+                        <div class="profession">
+                            <h3>Игорь Демьяненко</h3>
+                            <p>Product Designer</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/team2olga.jpg" alt="Ольга Репина Frontend Developer" width="270" height="260">
+                        <div class="profession">
+                            <h3>Ольга Репина</h3>
+                            <p>Frontend Developer</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/team3nikolai.jpg" alt="Николай Тарасов Marketing" width="270" height="260">
+                        <div class="profession">
+                            <h3>Николай Тарасов</h3>
+                            <p>Marketing</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/team4michail.jpg" alt="Михаил Ермаков UI Designer" width="270" height="260">
+                        <div class="profession">
+                            <h3>Михаил Ермаков</h3>
+                            <p>UI Designer</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
         </section>
         <!-- /TEAM -->
     </main>
 
-    <footer class="footer-container container">
-        <a href="#" class="logo logo-footer"><span>Web</span>Studio</a>
-        <address>
-            <p class="address-footer">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="list-no-style ">
-                <li class="address-footer"><a href="mailto:info@example.com">info@example.com</a></li>
-                <li class="address-footer"><a href="tel:+380991111111">+38 099 111 11 11</a></li>
-            </ul>
-        </address>
+    <footer class="footer-container">
+        <div class="container">
+            <a href="#" class="logo logo-footer"><span>Web</span>Studio</a>
+            <address>
+                <p class="address-footer">г. Киев, пр-т Леси Украинки, 26</p>
+                <ul class="list-no-style ">
+                    <li class="address-footer"><a href="mailto:info@example.com">info@example.com</a></li>
+                    <li class="address-footer"><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
     </footer>
 </body>
 
