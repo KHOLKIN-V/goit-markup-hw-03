@@ -373,6 +373,7 @@ body {
   padding-bottom: 94px;
 }
 .works-example {
+  width: 370px;
   padding: 20px 24px;
   border-right: 1px solid var(--projects-border-color);
   border-left: 1px solid var(--projects-border-color);
