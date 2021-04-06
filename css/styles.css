@@ -184,6 +184,10 @@ body {
 .address-footer:focus a {
   color: var(--accent-color);
 }
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+}
 
 /* HERO */
 .hero-container {
@@ -199,7 +203,6 @@ body {
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
 
   font-weight: 900;
   font-size: 44px;
@@ -347,6 +350,7 @@ body {
 }
 
 /* FILTER */
+
 .filter-button {
   font-weight: 500;
   font-size: 16px;
@@ -369,8 +373,7 @@ body {
   padding-bottom: 94px;
 }
 .works-example {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 24px;
   border-right: 1px solid var(--projects-border-color);
   border-left: 1px solid var(--projects-border-color);
   border-bottom: 1px solid var(--projects-border-color);
@@ -378,8 +381,11 @@ body {
 .works .container ul {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
   flex-wrap: wrap;
+}
+.container .filter {
+  padding-bottom: 0;
+  margin-bottom: 50px;
 }
 .works .filter li:not(:last-child) {
   margin-right: 8px;
@@ -396,7 +402,7 @@ body {
   flex-wrap: wrap;
 }
 .works .projects li {
-  width: calc(100%-60px / 3);
+  width: calc((100%-60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -412,13 +418,11 @@ body {
   padding: 0 auto;
 }
 .works .projects h3 {
-  padding: 0 24px;
   margin: 0;
   margin-bottom: 4px;
 }
 .works .projects p {
   display: block;
-  padding: 0 24px;
   margin: 0;
 }
 .works h3 {
